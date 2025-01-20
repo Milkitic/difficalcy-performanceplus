@@ -1,8 +1,8 @@
 [submodule "difficalcy"]
 	path = difficalcy
-	url = git@github.com:Syriiin/difficalcy.git
+	url = https://github.com/Milkitic/difficalcy.git
 	branch = master
 [submodule "osu"]
 	path = osu
-	url = git@github.com:Syriiin/osu.git
+	url = https://github.com/Syriiin/osu.git
 	branch = performanceplus
