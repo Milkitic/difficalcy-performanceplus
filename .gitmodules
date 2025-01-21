@@ -2,7 +2,3 @@
 	path = difficalcy
 	url = https://github.com/Milkitic/difficalcy.git
 	branch = master
-[submodule "osu"]
-	path = osu
-	url = https://github.com/Syriiin/osu.git
-	branch = performanceplus

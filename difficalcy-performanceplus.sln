@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Difficalcy.PerformancePlus", "Difficalcy.PerformancePlus\Difficalcy.PerformancePlus.csproj", "{C72E0803-7F92-4FD8-9C56-D9097D414379}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Difficalcy.PerformancePlus.Tests", "Difficalcy.PerformancePlus.Tests\Difficalcy.PerformancePlus.Tests.csproj", "{803FC7D6-7D1E-4344-8F15-6F9164922275}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Difficalcy", "difficalcy\Difficalcy\Difficalcy.csproj", "{FC87C349-3CA9-4C80-A384-102C416A97E1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "@Dependencies", "@Dependencies", "{A1013883-0CA1-4449-AE70-11177AD30DDB}"
@@ -25,10 +21,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Difficalcy.Catch", "diffica
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osu.Game.Rulesets.OsuPlus", "osu.Game.Rulesets.OsuPlus\osu.Game.Rulesets.OsuPlus.csproj", "{2CAB93E5-E485-4A6C-9F08-BC58406FDEC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osu.Game.Rulesets.Osu", "osu\osu.Game.Rulesets.Osu\osu.Game.Rulesets.Osu.csproj", "{A6BB31C9-D461-4698-9C43-93620B0AAAE3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osu.Game", "osu\osu.Game\osu.Game.csproj", "{9893EA41-CD10-43E7-A9A1-4DF81B5565EA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Difficalcy.All.ConsoleTest", "Difficalcy.All.ConsoleTest\Difficalcy.All.ConsoleTest.csproj", "{D45274D4-3BCB-43E8-ACB3-4E0B54160486}"
 EndProject
 Global
@@ -37,14 +29,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C72E0803-7F92-4FD8-9C56-D9097D414379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C72E0803-7F92-4FD8-9C56-D9097D414379}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C72E0803-7F92-4FD8-9C56-D9097D414379}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C72E0803-7F92-4FD8-9C56-D9097D414379}.Release|Any CPU.Build.0 = Release|Any CPU
-		{803FC7D6-7D1E-4344-8F15-6F9164922275}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{803FC7D6-7D1E-4344-8F15-6F9164922275}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{803FC7D6-7D1E-4344-8F15-6F9164922275}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{803FC7D6-7D1E-4344-8F15-6F9164922275}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FC87C349-3CA9-4C80-A384-102C416A97E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FC87C349-3CA9-4C80-A384-102C416A97E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC87C349-3CA9-4C80-A384-102C416A97E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -77,14 +61,6 @@ Global
 		{2CAB93E5-E485-4A6C-9F08-BC58406FDEC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CAB93E5-E485-4A6C-9F08-BC58406FDEC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CAB93E5-E485-4A6C-9F08-BC58406FDEC9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A6BB31C9-D461-4698-9C43-93620B0AAAE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A6BB31C9-D461-4698-9C43-93620B0AAAE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A6BB31C9-D461-4698-9C43-93620B0AAAE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A6BB31C9-D461-4698-9C43-93620B0AAAE3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9893EA41-CD10-43E7-A9A1-4DF81B5565EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9893EA41-CD10-43E7-A9A1-4DF81B5565EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9893EA41-CD10-43E7-A9A1-4DF81B5565EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9893EA41-CD10-43E7-A9A1-4DF81B5565EA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D45274D4-3BCB-43E8-ACB3-4E0B54160486}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D45274D4-3BCB-43E8-ACB3-4E0B54160486}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D45274D4-3BCB-43E8-ACB3-4E0B54160486}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -100,9 +76,6 @@ Global
 		{308BB62E-99CB-4871-8673-6EE5EEFDC408} = {A1013883-0CA1-4449-AE70-11177AD30DDB}
 		{DEF04250-2700-432C-90EC-063513D19DAF} = {A1013883-0CA1-4449-AE70-11177AD30DDB}
 		{EF10FFED-4ED8-48CD-9215-4532EE9CF095} = {A1013883-0CA1-4449-AE70-11177AD30DDB}
-		{2CAB93E5-E485-4A6C-9F08-BC58406FDEC9} = {A1013883-0CA1-4449-AE70-11177AD30DDB}
-		{A6BB31C9-D461-4698-9C43-93620B0AAAE3} = {A1013883-0CA1-4449-AE70-11177AD30DDB}
-		{9893EA41-CD10-43E7-A9A1-4DF81B5565EA} = {A1013883-0CA1-4449-AE70-11177AD30DDB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A8172314-A526-4DF7-9331-56B670148E1E}
