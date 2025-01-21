@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ppy.osu.Game.Rulesets.Osu" Version="2025.118.0" />
+    <PackageReference Include="ppy.osu.Game.Rulesets.Taiko" Version="2025.118.0" />
+    <PackageReference Include="ppy.osu.Game.Rulesets.Catch" Version="2025.118.0" />
+    <PackageReference Include="ppy.osu.Game.Rulesets.Mania" Version="2025.118.0" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\difficalcy\Difficalcy\Difficalcy.csproj" />
+    <ProjectReference Include="..\osu.Game.Rulesets.OsuPlus\osu.Game.Rulesets.OsuPlus.csproj" />
+  </ItemGroup>
+
+</Project>
