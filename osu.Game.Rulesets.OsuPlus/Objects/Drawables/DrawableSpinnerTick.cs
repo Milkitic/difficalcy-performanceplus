@@ -4,6 +4,7 @@
 #nullable disable
 
 using osu.Framework.Graphics;
+using osu.Game.Rulesets.Osu.Objects;
 
 namespace osu.Game.Rulesets.OsuPlus.Objects.Drawables
 {

@@ -5,8 +5,8 @@ using System;
 using osu.Game.Beatmaps;
 using osu.Game.Rulesets.Judgements;
 using osu.Game.Rulesets.Objects.Types;
+using osu.Game.Rulesets.Osu.Objects;
 using osu.Game.Rulesets.OsuPlus.Judgements;
-using osu.Game.Rulesets.OsuPlus.Objects;
 using osu.Game.Rulesets.Scoring;
 
 namespace osu.Game.Rulesets.OsuPlus.Scoring

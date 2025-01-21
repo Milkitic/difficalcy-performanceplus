@@ -5,8 +5,8 @@ using osu.Framework.Graphics;
 using osu.Game.Beatmaps;
 using osu.Game.Rulesets.Edit;
 using osu.Game.Rulesets.Edit.Tools;
+using osu.Game.Rulesets.Osu.Objects;
 using osu.Game.Rulesets.OsuPlus.Edit.Blueprints.HitCircles;
-using osu.Game.Rulesets.OsuPlus.Objects;
 
 namespace osu.Game.Rulesets.OsuPlus.Edit
 {

@@ -1,18 +1,29 @@
-﻿﻿// Copyright (c) ppy Pty Ltd <contact@ppy.sh>. Licensed under the MIT Licence.
+﻿// Copyright (c) ppy Pty Ltd <contact@ppy.sh>. Licensed under the MIT Licence.
 // See the LICENCE file in the repository root for full licence text.
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using osu.Game.Rulesets.Difficulty.Preprocessing;
 using osu.Game.Rulesets.Objects;
-using osu.Game.Rulesets.OsuPlus.Objects;
+using osu.Game.Rulesets.Osu.Objects;
 using osuTK;
 
 namespace osu.Game.Rulesets.OsuPlus.Difficulty.Preprocessing
 {
     public class OsuDifficultyHitObject : DifficultyHitObject
     {
+        private static readonly FieldInfo _field_LazyTravelDistance;
+        private static readonly FieldInfo _field_LazyEndPosition;
+
+        static OsuDifficultyHitObject()
+        {
+            var type = typeof(Slider);
+            _field_LazyTravelDistance = type.GetField("LazyTravelDistance", BindingFlags.GetField | BindingFlags.NonPublic | BindingFlags.Instance);
+            _field_LazyEndPosition = type.GetField("LazyEndPosition", BindingFlags.GetField | BindingFlags.NonPublic | BindingFlags.Instance);
+        }
+
         public const int NORMALISED_RADIUS = 52;
 
         protected new OsuHitObject BaseObject => (OsuHitObject)base.BaseObject;
@@ -122,7 +133,7 @@ namespace osu.Game.Rulesets.OsuPlus.Difficulty.Preprocessing
             if (lastObject is Slider lastSlider)
             {
                 computeSliderCursorPosition(lastSlider);
-                TravelDistance = lastSlider.LazyTravelDistance * scalingFactor;
+                TravelDistance = (float)_field_LazyTravelDistance.GetValue(lastSlider) * scalingFactor;
             }
 
             Vector2 lastCursorPosition = getEndCursorPosition(lastObject);
@@ -151,10 +162,10 @@ namespace osu.Game.Rulesets.OsuPlus.Difficulty.Preprocessing
 
         private void computeSliderCursorPosition(Slider slider)
         {
-            if (slider.LazyEndPosition != null)
+            if (_field_LazyEndPosition.GetValue(slider) != null)
                 return;
 
-            slider.LazyEndPosition = slider.StackedPosition;
+            _field_LazyEndPosition.SetValue(slider, slider.StackedPosition);
 
             float approxFollowCircleRadius = (float)(slider.Radius * 3);
             var computeVertex = new Action<double>(t =>
@@ -166,7 +177,7 @@ namespace osu.Game.Rulesets.OsuPlus.Difficulty.Preprocessing
                     progress %= 1;
 
                 // ReSharper disable once PossibleInvalidOperationException (bugged in current r# version)
-                var diff = slider.StackedPosition + slider.Path.PositionAt(progress) - slider.LazyEndPosition.Value;
+                var diff = slider.StackedPosition + slider.Path.PositionAt(progress) - ((Vector2?)_field_LazyEndPosition.GetValue(slider)).Value;
                 float dist = diff.Length;
 
                 if (dist > approxFollowCircleRadius)
@@ -174,8 +185,8 @@ namespace osu.Game.Rulesets.OsuPlus.Difficulty.Preprocessing
                     // The cursor would be outside the follow circle, we need to move it
                     diff.Normalize(); // Obtain direction of diff
                     dist -= approxFollowCircleRadius;
-                    slider.LazyEndPosition = (Vector2)slider.LazyEndPosition + diff * dist;
-                    slider.LazyTravelDistance += dist;
+                    _field_LazyEndPosition.SetValue(slider, (Vector2?)_field_LazyEndPosition.GetValue(slider) + diff * dist);
+                    _field_LazyTravelDistance.SetValue(slider, (float)_field_LazyTravelDistance.GetValue(slider)! + dist);
                 }
             });
 
@@ -192,7 +203,7 @@ namespace osu.Game.Rulesets.OsuPlus.Difficulty.Preprocessing
             if (hitObject is Slider slider)
             {
                 computeSliderCursorPosition(slider);
-                pos = slider.LazyEndPosition ?? pos;
+                pos = (Vector2?)_field_LazyEndPosition.GetValue(slider) ?? pos;
             }
 
             return pos;

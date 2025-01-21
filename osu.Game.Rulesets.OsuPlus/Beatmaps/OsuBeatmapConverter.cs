@@ -9,7 +9,7 @@ using osu.Game.Beatmaps;
 using osu.Game.Beatmaps.Legacy;
 using osu.Game.Rulesets.Objects;
 using osu.Game.Rulesets.Objects.Types;
-using osu.Game.Rulesets.OsuPlus.Objects;
+using osu.Game.Rulesets.Osu.Objects;
 using osu.Game.Rulesets.OsuPlus.UI;
 using osuTK;
 

@@ -13,6 +13,7 @@ using osu.Framework.Utils;
 using osu.Game.Graphics.Containers;
 using osu.Game.Rulesets.Judgements;
 using osu.Game.Rulesets.Objects.Drawables;
+using osu.Game.Rulesets.Osu.Objects;
 using osu.Game.Rulesets.OsuPlus.Judgements;
 using osu.Game.Rulesets.OsuPlus.Skinning;
 using osu.Game.Rulesets.OsuPlus.Skinning.Default;

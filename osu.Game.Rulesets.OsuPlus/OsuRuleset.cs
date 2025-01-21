@@ -18,13 +18,13 @@ using osu.Game.Rulesets.Configuration;
 using osu.Game.Rulesets.Difficulty;
 using osu.Game.Rulesets.Edit;
 using osu.Game.Rulesets.Mods;
+using osu.Game.Rulesets.Osu.Mods;
+using osu.Game.Rulesets.Osu.Objects;
 using osu.Game.Rulesets.OsuPlus.Beatmaps;
 using osu.Game.Rulesets.OsuPlus.Configuration;
 using osu.Game.Rulesets.OsuPlus.Difficulty;
 using osu.Game.Rulesets.OsuPlus.Edit;
 using osu.Game.Rulesets.OsuPlus.Edit.Setup;
-using osu.Game.Rulesets.OsuPlus.Mods;
-using osu.Game.Rulesets.OsuPlus.Objects;
 using osu.Game.Rulesets.OsuPlus.Replays;
 using osu.Game.Rulesets.OsuPlus.Scoring;
 using osu.Game.Rulesets.OsuPlus.Skinning.Argon;
@@ -199,22 +199,22 @@ namespace osu.Game.Rulesets.OsuPlus
                 case ModType.Fun:
                     return new Mod[]
                     {
-                        new OsuModTransform(),
-                        new OsuModWiggle(),
-                        new OsuModSpinIn(),
-                        new MultiMod(new OsuModGrow(), new OsuModDeflate()),
-                        new MultiMod(new ModWindUp(), new ModWindDown()),
-                        new OsuModTraceable(),
-                        new OsuModBarrelRoll(),
-                        new OsuModApproachDifferent(),
-                        new OsuModMuted(),
-                        new OsuModNoScope(),
-                        new MultiMod(new OsuModMagnetised(), new OsuModRepel()),
-                        new ModAdaptiveSpeed(),
-                        new OsuModFreezeFrame(),
-                        new OsuModBubbles(),
-                        new OsuModSynesthesia(),
-                        new OsuModDepth()
+                        //new OsuModTransform(),
+                        //new OsuModWiggle(),
+                        //new OsuModSpinIn(),
+                        //new MultiMod(new OsuModGrow(), new OsuModDeflate()),
+                        //new MultiMod(new ModWindUp(), new ModWindDown()),
+                        //new OsuModTraceable(),
+                        //new OsuModBarrelRoll(),
+                        //new OsuModApproachDifferent(),
+                        //new OsuModMuted(),
+                        //new OsuModNoScope(),
+                        //new MultiMod(new OsuModMagnetised(), new OsuModRepel()),
+                        //new ModAdaptiveSpeed(),
+                        //new OsuModFreezeFrame(),
+                        //new OsuModBubbles(),
+                        //new OsuModSynesthesia(),
+                        //new OsuModDepth()
                     };
 
                 case ModType.System:
@@ -362,7 +362,7 @@ namespace osu.Game.Rulesets.OsuPlus
             new DesignSection(),
         ];
 
-        /// <seealso cref="OsuHitObject.ApplyDefaultsToSelf"/>
+        /// <seealso cref="Osu.Objects.OsuHitObject.ApplyDefaultsToSelf"/>
         /// <seealso cref="OsuHitWindows"/>
         public override BeatmapDifficulty GetRateAdjustedDisplayDifficulty(IBeatmapDifficultyInfo difficulty, double rate)
         {

@@ -11,7 +11,7 @@ using osu.Framework.Graphics.Sprites;
 using osu.Game.Graphics;
 using osu.Game.Graphics.Sprites;
 using osu.Game.Rulesets.Objects.Drawables;
-using osu.Game.Rulesets.OsuPlus.Objects;
+using osu.Game.Rulesets.Osu.Objects;
 using osu.Game.Rulesets.OsuPlus.Objects.Drawables;
 using osu.Game.Skinning;
 using osuTK;

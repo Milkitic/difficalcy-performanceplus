@@ -6,8 +6,8 @@ using osu.Framework.Bindables;
 using osu.Framework.Graphics;
 using osu.Framework.Graphics.Primitives;
 using osu.Game.Configuration;
+using osu.Game.Rulesets.Osu.Objects;
 using osu.Game.Rulesets.OsuPlus.Edit.Blueprints.HitCircles.Components;
-using osu.Game.Rulesets.OsuPlus.Objects;
 using osu.Game.Rulesets.OsuPlus.Objects.Drawables;
 using osuTK;
 

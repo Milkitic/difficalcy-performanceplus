@@ -4,8 +4,8 @@
 using osu.Framework.Allocation;
 using osu.Game.Rulesets.Edit;
 using osu.Game.Rulesets.Objects;
+using osu.Game.Rulesets.Osu.Objects;
 using osu.Game.Rulesets.OsuPlus.Edit.Blueprints.HitCircles.Components;
-using osu.Game.Rulesets.OsuPlus.Objects;
 using osu.Game.Rulesets.OsuPlus.Objects.Drawables;
 using osu.Game.Screens.Edit;
 

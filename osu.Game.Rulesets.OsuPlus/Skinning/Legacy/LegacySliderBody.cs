@@ -3,7 +3,7 @@
 
 using System;
 using osu.Framework.Extensions.Color4Extensions;
-using osu.Game.Rulesets.OsuPlus.Objects;
+using osu.Game.Rulesets.Osu.Objects;
 using osu.Game.Rulesets.OsuPlus.Skinning.Default;
 using osu.Game.Skinning;
 using osu.Game.Utils;

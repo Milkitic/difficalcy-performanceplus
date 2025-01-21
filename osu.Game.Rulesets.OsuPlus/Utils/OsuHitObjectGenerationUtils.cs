@@ -4,8 +4,8 @@
 using System;
 using System.Linq;
 using osu.Game.Rulesets.Objects;
+using osu.Game.Rulesets.Osu.Objects;
 using osu.Game.Rulesets.OsuPlus.Beatmaps;
-using osu.Game.Rulesets.OsuPlus.Objects;
 using osu.Game.Rulesets.OsuPlus.UI;
 using osuTK;
 
@@ -106,7 +106,7 @@ namespace osu.Game.Rulesets.OsuPlus.Utils
         }
 
         /// <summary>
-        /// Reflects the position of the <see cref="OsuHitObject"/> in the playfield horizontally.
+        /// Reflects the position of the <see cref="Osu.Objects.OsuHitObject"/> in the playfield horizontally.
         /// </summary>
         /// <param name="osuObject">The object to reflect.</param>
         public static void ReflectHorizontallyAlongPlayfield(OsuHitObject osuObject)

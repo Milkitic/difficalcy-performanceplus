@@ -16,6 +16,7 @@ using osu.Game.Audio;
 using osu.Game.Rulesets.Judgements;
 using osu.Game.Rulesets.Objects;
 using osu.Game.Rulesets.Objects.Drawables;
+using osu.Game.Rulesets.Osu.Objects;
 using osu.Game.Rulesets.OsuPlus.Judgements;
 using osu.Game.Rulesets.OsuPlus.Scoring;
 using osu.Game.Rulesets.OsuPlus.Skinning;

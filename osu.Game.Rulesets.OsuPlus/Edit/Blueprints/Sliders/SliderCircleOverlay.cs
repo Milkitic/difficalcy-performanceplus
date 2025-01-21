@@ -5,8 +5,8 @@ using System;
 using osu.Framework.Graphics;
 using osu.Framework.Graphics.Containers;
 using osu.Framework.Graphics.Primitives;
+using osu.Game.Rulesets.Osu.Objects;
 using osu.Game.Rulesets.OsuPlus.Edit.Blueprints.HitCircles.Components;
-using osu.Game.Rulesets.OsuPlus.Objects;
 
 namespace osu.Game.Rulesets.OsuPlus.Edit.Blueprints.Sliders
 {

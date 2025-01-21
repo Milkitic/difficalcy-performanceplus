@@ -24,7 +24,7 @@ using osu.Game.Graphics.UserInterface;
 using osu.Game.Rulesets.Edit;
 using osu.Game.Rulesets.Objects;
 using osu.Game.Rulesets.Objects.Types;
-using osu.Game.Rulesets.OsuPlus.Objects;
+using osu.Game.Rulesets.Osu.Objects;
 using osu.Game.Screens.Edit;
 using osuTK;
 using osuTK.Input;
@@ -268,60 +268,60 @@ namespace osu.Game.Rulesets.OsuPlus.Edit.Blueprints.Sliders.Components
             switch (e.Key)
             {
                 case Key.Tab:
-                {
-                    var selectedPieces = Pieces.Where(p => p.IsSelected.Value).ToArray();
-                    if (selectedPieces.Length != 1)
-                        return false;
-
-                    PathControlPointPiece<T> selectedPiece = selectedPieces.Single();
-                    PathControlPoint selectedPoint = selectedPiece.ControlPoint;
-
-                    PathType?[] validTypes = path_types;
-
-                    if (selectedPoint == controlPoints[0])
-                        validTypes = validTypes.Where(t => t != null).ToArray();
-
-                    int currentTypeIndex = Array.IndexOf(validTypes, selectedPoint.Type);
-
-                    if (currentTypeIndex < 0 && e.ShiftPressed)
-                        currentTypeIndex = 0;
-
-                    changeHandler?.BeginChange();
-
-                    do
                     {
-                        currentTypeIndex = (validTypes.Length + currentTypeIndex + (e.ShiftPressed ? -1 : 1)) % validTypes.Length;
+                        var selectedPieces = Pieces.Where(p => p.IsSelected.Value).ToArray();
+                        if (selectedPieces.Length != 1)
+                            return false;
 
-                        updatePathTypeOfSelectedPieces(validTypes[currentTypeIndex]);
-                    } while (selectedPoint.Type != validTypes[currentTypeIndex]);
+                        PathControlPointPiece<T> selectedPiece = selectedPieces.Single();
+                        PathControlPoint selectedPoint = selectedPiece.ControlPoint;
 
-                    changeHandler?.EndChange();
+                        PathType?[] validTypes = path_types;
 
-                    return true;
-                }
+                        if (selectedPoint == controlPoints[0])
+                            validTypes = validTypes.Where(t => t != null).ToArray();
+
+                        int currentTypeIndex = Array.IndexOf(validTypes, selectedPoint.Type);
+
+                        if (currentTypeIndex < 0 && e.ShiftPressed)
+                            currentTypeIndex = 0;
+
+                        changeHandler?.BeginChange();
+
+                        do
+                        {
+                            currentTypeIndex = (validTypes.Length + currentTypeIndex + (e.ShiftPressed ? -1 : 1)) % validTypes.Length;
+
+                            updatePathTypeOfSelectedPieces(validTypes[currentTypeIndex]);
+                        } while (selectedPoint.Type != validTypes[currentTypeIndex]);
+
+                        changeHandler?.EndChange();
+
+                        return true;
+                    }
 
                 case Key.Number1:
                 case Key.Number2:
                 case Key.Number3:
                 case Key.Number4:
                 case Key.Number5:
-                {
-                    if (!e.AltPressed)
-                        return false;
+                    {
+                        if (!e.AltPressed)
+                            return false;
 
-                    // If no pieces are selected, we can't change the path type.
-                    if (Pieces.All(p => !p.IsSelected.Value))
-                        return false;
+                        // If no pieces are selected, we can't change the path type.
+                        if (Pieces.All(p => !p.IsSelected.Value))
+                            return false;
 
-                    PathType? type = path_types[e.Key - Key.Number1];
+                        PathType? type = path_types[e.Key - Key.Number1];
 
-                    // The first control point can never be inherit type
-                    if (Pieces[0].IsSelected.Value && type == null)
-                        return false;
+                        // The first control point can never be inherit type
+                        if (Pieces[0].IsSelected.Value && type == null)
+                            return false;
 
-                    updatePathTypeOfSelectedPieces(type);
-                    return true;
-                }
+                        updatePathTypeOfSelectedPieces(type);
+                        return true;
+                    }
 
                 default:
                     return false;

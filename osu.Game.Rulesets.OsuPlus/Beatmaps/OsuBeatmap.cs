@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using osu.Game.Beatmaps;
 using osu.Game.Resources.Localisation.Web;
-using osu.Game.Rulesets.OsuPlus.Objects;
+using osu.Game.Rulesets.Osu.Objects;
 
 namespace osu.Game.Rulesets.OsuPlus.Beatmaps
 {

@@ -4,7 +4,7 @@
 using System.Diagnostics;
 using System.Linq;
 using osu.Game.Rulesets.Objects;
-using osu.Game.Rulesets.OsuPlus.Objects;
+using osu.Game.Rulesets.Osu.Objects;
 using osu.Game.Screens.Edit.Compose.Components;
 
 namespace osu.Game.Rulesets.OsuPlus.Edit

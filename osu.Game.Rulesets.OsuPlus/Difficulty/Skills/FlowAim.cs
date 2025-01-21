@@ -2,8 +2,8 @@
 // See the LICENCE file in the repository root for full licence text.
 
 using osu.Game.Rulesets.Mods;
+using osu.Game.Rulesets.Osu.Objects;
 using osu.Game.Rulesets.OsuPlus.Difficulty.Preprocessing;
-using osu.Game.Rulesets.OsuPlus.Objects;
 
 namespace osu.Game.Rulesets.OsuPlus.Difficulty.Skills
 {

@@ -6,8 +6,8 @@ using osu.Framework.Allocation;
 using osu.Framework.Graphics;
 using osu.Framework.Input.Events;
 using osu.Game.Rulesets.Edit;
+using osu.Game.Rulesets.Osu.Objects;
 using osu.Game.Rulesets.OsuPlus.Edit.Blueprints.Spinners.Components;
-using osu.Game.Rulesets.OsuPlus.Objects;
 using osu.Game.Rulesets.OsuPlus.UI;
 using osuTK.Input;
 

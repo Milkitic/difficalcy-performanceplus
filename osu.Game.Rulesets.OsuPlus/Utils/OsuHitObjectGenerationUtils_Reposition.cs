@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using osu.Framework.Graphics.Primitives;
 using osu.Framework.Utils;
-using osu.Game.Rulesets.OsuPlus.Objects;
+using osu.Game.Rulesets.Osu.Objects;
 using osu.Game.Rulesets.OsuPlus.UI;
 using osuTK;
 
@@ -23,9 +23,9 @@ namespace osu.Game.Rulesets.OsuPlus.Utils
 
         /// <summary>
         /// Generate a list of <see cref="ObjectPositionInfo"/>s containing information for how the given list of
-        /// <see cref="OsuHitObject"/>s are positioned.
+        /// <see cref="Osu.Objects.OsuHitObject"/>s are positioned.
         /// </summary>
-        /// <param name="hitObjects">A list of <see cref="OsuHitObject"/>s to process.</param>
+        /// <param name="hitObjects">A list of <see cref="Osu.Objects.OsuHitObject"/>s to process.</param>
         /// <returns>A list of <see cref="ObjectPositionInfo"/>s describing how each hit object is positioned relative to the previous one.</returns>
         public static List<ObjectPositionInfo> GeneratePositionInfos(IEnumerable<OsuHitObject> hitObjects)
         {

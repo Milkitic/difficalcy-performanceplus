@@ -5,8 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using osu.Game.Beatmaps;
 using osu.Game.Rulesets.Objects;
-using osu.Game.Rulesets.OsuPlus.Objects;
+using osu.Game.Rulesets.Osu.Objects;
 using osu.Game.Rulesets.Scoring;
+using SliderTick = osu.Game.Rulesets.Osu.Objects.SliderTick;
 
 namespace osu.Game.Rulesets.OsuPlus.Scoring
 {

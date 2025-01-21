@@ -7,8 +7,8 @@ using System.Linq;
 using osu.Game.Rulesets.Difficulty.Preprocessing;
 using osu.Game.Rulesets.Difficulty.Skills;
 using osu.Game.Rulesets.Mods;
+using osu.Game.Rulesets.Osu.Objects;
 using osu.Game.Rulesets.OsuPlus.Difficulty.Preprocessing;
-using osu.Game.Rulesets.OsuPlus.Objects;
 
 namespace osu.Game.Rulesets.OsuPlus.Difficulty.Skills
 {

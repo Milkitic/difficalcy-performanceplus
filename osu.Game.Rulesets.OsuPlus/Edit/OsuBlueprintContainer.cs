@@ -3,10 +3,10 @@
 
 using osu.Game.Rulesets.Edit;
 using osu.Game.Rulesets.Objects;
+using osu.Game.Rulesets.Osu.Objects;
 using osu.Game.Rulesets.OsuPlus.Edit.Blueprints.HitCircles;
 using osu.Game.Rulesets.OsuPlus.Edit.Blueprints.Sliders;
 using osu.Game.Rulesets.OsuPlus.Edit.Blueprints.Spinners;
-using osu.Game.Rulesets.OsuPlus.Objects;
 using osu.Game.Screens.Edit.Compose.Components;
 
 namespace osu.Game.Rulesets.OsuPlus.Edit

@@ -12,6 +12,7 @@ using osu.Framework.Utils;
 using osu.Game.Rulesets.Edit;
 using osu.Game.Rulesets.Objects;
 using osu.Game.Rulesets.Objects.Types;
+using osu.Game.Rulesets.Osu.Objects;
 using osu.Game.Rulesets.OsuPlus.Edit.Blueprints.HitCircles.Components;
 using osu.Game.Rulesets.OsuPlus.Edit.Blueprints.Sliders.Components;
 using osu.Game.Rulesets.OsuPlus.Objects;

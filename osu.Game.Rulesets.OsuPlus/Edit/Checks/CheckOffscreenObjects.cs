@@ -4,7 +4,7 @@
 using System.Collections.Generic;
 using osu.Game.Rulesets.Edit;
 using osu.Game.Rulesets.Edit.Checks.Components;
-using osu.Game.Rulesets.OsuPlus.Objects;
+using osu.Game.Rulesets.Osu.Objects;
 using osuTK;
 
 namespace osu.Game.Rulesets.OsuPlus.Edit.Checks
@@ -38,20 +38,20 @@ namespace osu.Game.Rulesets.OsuPlus.Edit.Checks
                 switch (hitobject)
                 {
                     case Slider slider:
-                    {
-                        foreach (var issue in sliderIssues(slider))
-                            yield return issue;
+                        {
+                            foreach (var issue in sliderIssues(slider))
+                                yield return issue;
 
-                        break;
-                    }
+                            break;
+                        }
 
                     case HitCircle circle:
-                    {
-                        if (isOffscreen(circle.StackedPosition, circle.Radius))
-                            yield return new IssueTemplateOffscreenCircle(this).Create(circle);
+                        {
+                            if (isOffscreen(circle.StackedPosition, circle.Radius))
+                                yield return new IssueTemplateOffscreenCircle(this).Create(circle);
 
-                        break;
-                    }
+                            break;
+                        }
                 }
             }
         }

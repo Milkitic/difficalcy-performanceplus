@@ -5,6 +5,7 @@
 
 using System.Diagnostics;
 using osu.Framework.Bindables;
+using osu.Game.Rulesets.Osu.Objects;
 using osu.Game.Rulesets.OsuPlus.UI;
 using osu.Game.Rulesets.Scoring;
 

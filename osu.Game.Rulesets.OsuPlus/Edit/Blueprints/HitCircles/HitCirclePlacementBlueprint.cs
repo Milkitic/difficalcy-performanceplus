@@ -3,8 +3,8 @@
 
 using osu.Framework.Input.Events;
 using osu.Game.Rulesets.Edit;
+using osu.Game.Rulesets.Osu.Objects;
 using osu.Game.Rulesets.OsuPlus.Edit.Blueprints.HitCircles.Components;
-using osu.Game.Rulesets.OsuPlus.Objects;
 using osuTK.Input;
 
 namespace osu.Game.Rulesets.OsuPlus.Edit.Blueprints.HitCircles

@@ -6,7 +6,7 @@
 using osu.Framework.Bindables;
 using osu.Framework.Graphics.Lines;
 using osu.Game.Rulesets.Objects.Types;
-using osu.Game.Rulesets.OsuPlus.Objects;
+using osu.Game.Rulesets.Osu.Objects;
 using osuTK;
 
 namespace osu.Game.Rulesets.OsuPlus.Edit.Blueprints.Sliders.Components
