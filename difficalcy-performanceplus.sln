@@ -25,6 +25,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Difficalcy.Catch", "diffica
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osu.Game.Rulesets.OsuPlus", "osu.Game.Rulesets.OsuPlus\osu.Game.Rulesets.OsuPlus.csproj", "{2CAB93E5-E485-4A6C-9F08-BC58406FDEC9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osu.Game.Rulesets.Osu", "osu\osu.Game.Rulesets.Osu\osu.Game.Rulesets.Osu.csproj", "{A6BB31C9-D461-4698-9C43-93620B0AAAE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osu.Game", "osu\osu.Game\osu.Game.csproj", "{9893EA41-CD10-43E7-A9A1-4DF81B5565EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Difficalcy.All.ConsoleTest", "Difficalcy.All.ConsoleTest\Difficalcy.All.ConsoleTest.csproj", "{D45274D4-3BCB-43E8-ACB3-4E0B54160486}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +77,18 @@ Global
 		{2CAB93E5-E485-4A6C-9F08-BC58406FDEC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CAB93E5-E485-4A6C-9F08-BC58406FDEC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CAB93E5-E485-4A6C-9F08-BC58406FDEC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6BB31C9-D461-4698-9C43-93620B0AAAE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6BB31C9-D461-4698-9C43-93620B0AAAE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6BB31C9-D461-4698-9C43-93620B0AAAE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6BB31C9-D461-4698-9C43-93620B0AAAE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9893EA41-CD10-43E7-A9A1-4DF81B5565EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9893EA41-CD10-43E7-A9A1-4DF81B5565EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9893EA41-CD10-43E7-A9A1-4DF81B5565EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9893EA41-CD10-43E7-A9A1-4DF81B5565EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D45274D4-3BCB-43E8-ACB3-4E0B54160486}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D45274D4-3BCB-43E8-ACB3-4E0B54160486}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D45274D4-3BCB-43E8-ACB3-4E0B54160486}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D45274D4-3BCB-43E8-ACB3-4E0B54160486}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,6 +101,8 @@ Global
 		{DEF04250-2700-432C-90EC-063513D19DAF} = {A1013883-0CA1-4449-AE70-11177AD30DDB}
 		{EF10FFED-4ED8-48CD-9215-4532EE9CF095} = {A1013883-0CA1-4449-AE70-11177AD30DDB}
 		{2CAB93E5-E485-4A6C-9F08-BC58406FDEC9} = {A1013883-0CA1-4449-AE70-11177AD30DDB}
+		{A6BB31C9-D461-4698-9C43-93620B0AAAE3} = {A1013883-0CA1-4449-AE70-11177AD30DDB}
+		{9893EA41-CD10-43E7-A9A1-4DF81B5565EA} = {A1013883-0CA1-4449-AE70-11177AD30DDB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A8172314-A526-4DF7-9331-56B670148E1E}

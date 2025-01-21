@@ -22,12 +22,12 @@ namespace Difficalcy.All.Services
         public PpPlusCalculatorService(
             ICache cache,
             IBeatmapProvider beatmapProvider,
-            IConfiguration configuration
+            string osuCommitHash
         )
             : base(cache)
         {
             this.beatmapProvider = beatmapProvider;
-            osuCommitHash = configuration["OSU_COMMIT_HASH"];
+            this.osuCommitHash = osuCommitHash;
             if (osuCommitHash.Length == 0)
                 throw new ArgumentException("OSU_COMMIT_HASH must be provided in configuration");
         }

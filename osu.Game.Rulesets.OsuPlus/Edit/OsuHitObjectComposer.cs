@@ -12,11 +12,9 @@ using osu.Framework.Bindables;
 using osu.Framework.Caching;
 using osu.Framework.Graphics;
 using osu.Framework.Graphics.Containers;
-using osu.Framework.Graphics.Sprites;
 using osu.Framework.Input.Events;
 using osu.Framework.Utils;
 using osu.Game.Beatmaps;
-using osu.Game.Graphics;
 using osu.Game.Graphics.UserInterface;
 using osu.Game.Rulesets.Edit;
 using osu.Game.Rulesets.Edit.Tools;
@@ -25,7 +23,6 @@ using osu.Game.Rulesets.Objects;
 using osu.Game.Rulesets.OsuPlus.Objects;
 using osu.Game.Rulesets.OsuPlus.UI;
 using osu.Game.Rulesets.UI;
-using osu.Game.Screens.Edit.Components;
 using osu.Game.Screens.Edit.Compose.Components;
 using osuTK;
 
@@ -53,10 +50,10 @@ namespace osu.Game.Rulesets.OsuPlus.Edit
 
         protected override Drawable CreateHitObjectInspector() => new OsuHitObjectInspector();
 
-        protected override IEnumerable<TernaryButton> CreateTernaryButtons()
-            => base.CreateTernaryButtons()
-                   .Append(new TernaryButton(rectangularGridSnapToggle, "Grid Snap", () => new SpriteIcon { Icon = OsuIcon.EditorGridSnap }))
-                   .Concat(DistanceSnapProvider.CreateTernaryButtons());
+        //protected override IEnumerable<TernaryButton> CreateTernaryButtons()
+        //    => base.CreateTernaryButtons()
+        //           .Append(new TernaryButton(rectangularGridSnapToggle, "Grid Snap", () => new SpriteIcon { Icon = OsuIcon.EditorGridSnap }))
+        //           .Concat(DistanceSnapProvider.CreateTernaryButtons());
 
         private BindableList<HitObject> selectedHitObjects;
 
