@@ -13,7 +13,7 @@ services:
       - cache
 
   cache:
-    image: redis:8
+    image: redis:7
     volumes:
       - redis-data:/data
 
